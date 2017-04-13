@@ -1,0 +1,19 @@
+<head>
+</head>
+<body>
+
+Open a new window and then navigate it to a Google account login.<br>
+
+<button>Click me</button>
+<script> 
+document.querySelector('button').addEventListener('click', function() {
+  w = window.open('https://accounts.google.com/ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2FManageAccount&followup=https%3A%2F%2Faccounts.google.com%2FManageAccount#identifier', "w");
+  setTimeout(function() {
+    w.location = 'help://aa.com';
+    //setInterval(function() { w.location = 'irc://irc.freenode.net'; }, 0);
+
+  }, 3000);
+});
+
+</script>
+</body>
